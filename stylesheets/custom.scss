@@ -1,0 +1,84 @@
+//Imports all of the files into just one
+@import "reset", "mixings", "grid";
+
+html,body{
+	font-size:16px;
+}
+
+#refresh-logo{
+	background: url('../images/refresh-logo.png') no-repeat;
+	background-size: cover;
+	width: 393px;
+	height: 146px;
+	text-indent: -9999px;
+}
+
+.button{
+	//Button Styles
+	height:75px;
+	border-radius: 5px;
+	padding:5px;
+	margin: 1.5em auto 0;
+	cursor: default;
+	//Fonts Styles
+	font: normal 2.5em/1.4em "Bree Serif", Tahoma, Arial, serif;
+	text-align: center;
+	color: rgba(#fff,0.85); //White with a little bit of opacity
+}
+
+.blue{
+	width: 350px;
+	background-color: #1f72c5;
+}
+
+.medium{
+	max-width: 330px;
+}
+
+.right{
+	float: right;
+	&.button{
+		position:relative;
+		right:2em;
+	}
+}
+
+.left{
+	float: left;
+	&.button{
+		position:relative;
+		left:2em;
+	}
+}
+
+.refresh{
+	width:100%;
+	margin: 0 auto;
+	position: absolute;
+	&.forest{
+		background: url('../images/refresh-nature.png') no-repeat;
+		background-size: cover;
+		height: 648px;
+		text-indent: -9999px;
+		z-index: 5;
+	}
+	&.stage{
+		background: url('../images/refresh-stage.png') no-repeat;
+		background-size: cover;
+		height: 648px;
+		text-indent: -9999px;
+		z-index: 10;
+	}
+	&.people{
+		background: url('../images/refresh-people.png') repeat-x;
+		height: 154px;
+		margin: 31em 0 0;
+		text-indent: -9999px;
+		z-index: 15;
+	}
+}
+
+#content{
+	margin: 44em auto 0;
+}
+
