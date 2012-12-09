@@ -1,9 +1,50 @@
 //Imports all of the files into just one
 @import "reset", "mixings", "grid";
 
+$light-base: #faf6f4;
+$base: #352A25;
+$base-link: #b84d21;
+
 html,body{
 	font-size:16px;
+	background-color: $light-base;
+	color: $base;
+	font-family:  "Fanwood Text", Times, serif;
 }
+
+h2{
+	font: normal 3.2em/1.1em "Titan One", Tahoma, Arial, serif;
+}
+
+p, h3{
+	font-size: 1.2em;
+	line-height: 1.5em;
+	color: lighten($base, 10%);
+	text-align: left;
+}
+
+h3{
+	font-size: 2em;
+	line-height: 1.1em;
+	margin: 0.2em 0 1em;
+}
+
+a{
+	color: $base-link;
+	text-decoration: none;
+	&:hover{
+		color:$base;
+	}
+}
+
+sup{
+	font-size: 0.6em;
+	line-height: 0;
+	position: relative;
+	top: -0.5em;
+	vertical-align: baseline;
+}
+
 
 #refresh-logo{
 	background: url('../images/refresh-logo.png') no-repeat;
@@ -15,24 +56,36 @@ html,body{
 
 .button{
 	//Button Styles
-	height:75px;
-	border-radius: 5px;
-	padding:5px;
-	margin: 1.5em auto 0;
-	cursor: default;
+	padding: 0 2em;
+	height: 2.50em;
+	display: inline-block;
 	//Fonts Styles
 	font: normal 2.5em/1.4em "Bree Serif", Tahoma, Arial, serif;
+	line-height: 2.5em;
+	text-transform: uppercase;
+	text-decoration: none;
 	text-align: center;
-	color: rgba(#fff,0.85); //White with a little bit of opacity
+	letter-spacing: 0.2em;
+	box-sizing: border-box;
+	//border radius
+	-webkit-border-radius: 0.25em; 
+	-moz-border-radius: 0.25em; 
+	border-radius: 0.25em;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	width:400px;
 }
 
 .blue{
-	width: 350px;
-	background-color: #1f72c5;
+	background-color: #009B2D;
 }
 
 .medium{
-	max-width: 330px;
+	margin-top: 0.5em;
+	max-width: 360px;
+	box-shadow: 0em 0.333em 0em #005919; /* 5.33px/16px */
+	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=4, Color='#005919', Positive='true');
 }
 
 .right{
@@ -50,35 +103,30 @@ html,body{
 		left:2em;
 	}
 }
-
-.refresh{
+#illustration{
+	background: #c64426 url('../images/refresh-nature.png') no-repeat;
+	background-size: contain;
+	height: 520px;
+	text-indent: -9999px;
+	z-index: 5;
+	//Refresh images
+	& .refresh{
 	width:100%;
 	margin: 0 auto;
 	position: absolute;
-	&.forest{
-		background: url('../images/refresh-nature.png') no-repeat;
-		background-size: cover;
-		height: 648px;
-		text-indent: -9999px;
-		z-index: 5;
-	}
-	&.stage{
-		background: url('../images/refresh-stage.png') no-repeat;
-		background-size: cover;
-		height: 648px;
-		text-indent: -9999px;
-		z-index: 10;
-	}
-	&.people{
-		background: url('../images/refresh-people.png') repeat-x;
-		height: 154px;
-		margin: 31em 0 0;
-		text-indent: -9999px;
-		z-index: 15;
+		&.stage{
+			background: url('../images/refresh-stage.png') no-repeat;
+			background-size: contain;
+			height: 500px;
+			text-indent: -9999px;
+			z-index: 10;
+		}
+		&.people{
+			background: url('../images/refresh-people.png') repeat-x;
+			height: 154px;
+			margin: 21em 0 0;
+			text-indent: -9999px;
+			z-index: 15;
+		}
 	}
 }
-
-#content{
-	margin: 44em auto 0;
-}
-
