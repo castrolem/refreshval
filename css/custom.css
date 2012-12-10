@@ -318,3 +318,27 @@ header.container {
   .sponsor li img {
     width: 100%;
     margin: 1.2em auto; }
+
+#main-footer {
+  background: #352a25;
+  height: 130px;
+  margin: 0; }
+  #main-footer a:hover {
+    color: #faf6f4; }
+  #main-footer h3 {
+    font-size: 1.5em;
+    color: #faf6f4; }
+  #main-footer p {
+    font-size: 1.1em;
+    color: #faf6f4; }
+
+.top-pointer {
+  background: url(../images/arrow.png) no-repeat;
+  position: absolute;
+  right: 10px;
+  width: 96px;
+  height: 96px;
+  margin: -4.5em 0 0;
+  text-indent: -9999px; }
+  .top-pointer:hover {
+    opacity: 0.8; }

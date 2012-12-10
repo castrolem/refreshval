@@ -192,3 +192,35 @@ header.container{
 	}
 }
 
+//footer
+
+#main-footer{
+	background: $base;
+	height: 130px;
+	margin: 0;
+	a:hover{
+		color: $light-base;
+	}
+	h3{
+		font-size: 1.5em;
+		color: $light-base;
+	}
+	p{
+		font-size: 1.1em;
+		color: $light-base;
+	}
+}
+
+.top-pointer{
+	background: url(../images/arrow.png) no-repeat;
+	position: absolute;
+	right: 10px;
+	width: 96px;
+	height: 96px;
+	margin: -4.5em 0 0;
+	text-indent: -9999px;
+	&:hover{
+		opacity:0.8;
+	}
+}
+
