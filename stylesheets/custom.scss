@@ -88,6 +88,13 @@ sup{
 	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=4, Color='#005919', Positive='true');
 }
 
+.small{
+	max-width: 220px;
+	max-height: 50px;
+	font-size: 1em;
+	line-height: 2.5em;
+}
+
 .right{
 	float: right;
 	&.button{
@@ -103,6 +110,7 @@ sup{
 		left:2em;
 	}
 }
+//Images section
 #illustration{
 	background: #c64426 url('../images/refresh-nature.png') no-repeat;
 	background-size: contain;
@@ -128,5 +136,28 @@ sup{
 			text-indent: -9999px;
 			z-index: 15;
 		}
+	}
+}
+
+//iFrame and map holders
+
+#maps{
+	height: 400px;
+	margin: 0 auto;
+	position: relative;
+	iframe{
+		display: block;
+		height: 100%;
+		width: 100%;
+		z-index: 10;
+	}
+	p{
+		background: $light-base;
+		text-align:center;
+		margin: -19em 0 0 34em;
+		padding: 0 20px 20px;
+		position: relative;
+		width: 30%;
+		z-index:15;
 	}
 }

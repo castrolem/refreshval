@@ -140,6 +140,12 @@ sup {
   /* 5.33px/16px */
   filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=4, Color='#005919', Positive='true'); }
 
+.small {
+  max-width: 220px;
+  max-height: 50px;
+  font-size: 1em;
+  line-height: 2.5em; }
+
 .right {
   float: right; }
   .right.button {
@@ -174,3 +180,21 @@ sup {
       margin: 21em 0 0;
       text-indent: -9999px;
       z-index: 15; }
+
+#maps {
+  height: 400px;
+  margin: 0 auto;
+  position: relative; }
+  #maps iframe {
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: 10; }
+  #maps p {
+    background: #faf6f4;
+    text-align: center;
+    margin: -19em 0 0 34em;
+    padding: 0 20px 20px;
+    position: relative;
+    width: 30%;
+    z-index: 15; }
