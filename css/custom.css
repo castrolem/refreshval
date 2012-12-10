@@ -86,9 +86,17 @@ table {
   background-color: black;
   color: white;
   cursor: pointer;
-  width: 400px; }
+  width: 100%; }
   .button:hover {
     color: #000; }
+
+.large {
+  margin: 14px auto 0;
+  max-width: 700px;
+  height: 60px;
+  line-height: 1.9em;
+  font-size: 2em;
+  padding: 0; }
 
 .medium {
   margin-top: 0.5em;
@@ -245,3 +253,21 @@ header.container {
       text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
       #maps p a:hover {
         text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#agenda li {
+  border-bottom: 1px dashed #352a25;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  margin: 0 0 16px;
+  padding: 3px 0 14px 125px;
+  position: relative; }
+#agenda h6 {
+  background: url(../images/clock.png) 0 center no-repeat;
+  font-size: 0.87em;
+  margin: 0 0 5px;
+  padding: 0 0 0 35px;
+  left: 0;
+  position: absolute;
+  top: 2px;
+  text-transform: uppercase;
+  font: bold 0.8em/1.9em "Helvetica Neue", Helvetica, Arial, serif; }

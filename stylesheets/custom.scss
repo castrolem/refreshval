@@ -131,4 +131,28 @@ header.container{
 
 //agenda
 
-
+#agenda{
+	li{
+		border-bottom: 1px dashed $base;
+		font-size: 1.5em;
+		line-height: 1.4em;
+		margin: 0 0 16px;
+		padding: 3px 0 14px 125px;
+		position: relative;
+	}
+	h6{
+		background: url(../images/clock.png) 0 center no-repeat;
+		font-size: 0.87em;
+		margin: 0 0 5px;
+		padding: 0 0 0 35px;
+		left: 0;
+		position: absolute;
+		top: 2px;
+		text-transform: uppercase;
+		font: bold 0.8em/1.9em "Helvetica Neue", Helvetica, Arial, serif;
+		@media screen and (min-width: 930px){
+			
+		}
+	}
+	
+}
