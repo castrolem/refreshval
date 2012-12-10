@@ -254,6 +254,16 @@ header.container {
       #maps p a:hover {
         text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
 
+.spacer {
+  margin: 16px 0 0; }
+
+.rules {
+  background: url(../images/rules.png) no-repeat;
+  width: 100%;
+  height: 290px;
+  background-size: cover;
+  text-indent: -9999px; }
+
 #agenda li {
   border-bottom: 1px dashed #352a25;
   font-size: 1.5em;
