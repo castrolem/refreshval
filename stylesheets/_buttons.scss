@@ -1,0 +1,52 @@
+.button{
+	//Button Styles
+	padding: 0 0.5em;
+	height: 2.50em;
+	display: inline-block;
+	//Fonts Styles
+	font: normal 2.5em/1.4em "Bree Serif", Tahoma, Arial, serif;
+	line-height: 2.5em;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: 0.2em;
+	box-sizing: border-box;
+	//border radius
+	-webkit-border-radius: 0.25em; 
+	-moz-border-radius: 0.25em; 
+	border-radius: 0.25em;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	width:400px;
+	&:hover{
+		color: #000;
+	}
+	@media only screen and (max-width: 800px){
+		
+	}
+}
+
+.green{
+	background-color: #009B2D;
+	&:hover{
+		background-color: #009B2D + #0e0e0e;
+	}
+}
+
+.medium{
+	margin-top: 0.5em;
+	max-width: 360px;
+	box-shadow: 0em 0.333em 0em #005919; /* 5.33px/16px */
+	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=4, Color='#005919', Positive='true');
+	@media only screen and (max-width: 800px){
+		
+	}
+}
+
+.small{
+	max-width: 220px;
+	max-height: 50px;
+	font-size: 1em;
+	line-height: 2.5em;
+}

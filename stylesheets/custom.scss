@@ -1,5 +1,5 @@
 //Imports all of the files into just one
-@import "reset", "mixings", "grid";
+@import "reset", "mixings", "grid", "buttons";
 
 $light-base: #faf6f4;
 $base: #352A25;
@@ -54,62 +54,10 @@ sup{
 	text-indent: -9999px;
 }
 
-.button{
-	//Button Styles
-	padding: 0 2em;
-	height: 2.50em;
-	display: inline-block;
-	//Fonts Styles
-	font: normal 2.5em/1.4em "Bree Serif", Tahoma, Arial, serif;
-	line-height: 2.5em;
-	text-transform: uppercase;
-	text-decoration: none;
-	text-align: center;
-	letter-spacing: 0.2em;
-	box-sizing: border-box;
-	//border radius
-	-webkit-border-radius: 0.25em; 
-	-moz-border-radius: 0.25em; 
-	border-radius: 0.25em;
-	background-color: black;
-	color: white;
-	cursor: pointer;
-	width:400px;
+header.container{
+	padding-left: 10em;
 }
 
-.blue{
-	background-color: #009B2D;
-}
-
-.medium{
-	margin-top: 0.5em;
-	max-width: 360px;
-	box-shadow: 0em 0.333em 0em #005919; /* 5.33px/16px */
-	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=4, Color='#005919', Positive='true');
-}
-
-.small{
-	max-width: 220px;
-	max-height: 50px;
-	font-size: 1em;
-	line-height: 2.5em;
-}
-
-.right{
-	float: right;
-	&.button{
-		position:relative;
-		right:2em;
-	}
-}
-
-.left{
-	float: left;
-	&.button{
-		position:relative;
-		left:2em;
-	}
-}
 //Images section
 #illustration{
 	background: #c64426 url('../images/refresh-nature.png') no-repeat;
@@ -139,6 +87,10 @@ sup{
 	}
 }
 
+.content{
+	border-bottom: 10px solid #EEC47A;
+}
+
 //iFrame and map holders
 
 #maps{
@@ -159,6 +111,9 @@ sup{
 		position: relative;
 		width: 30%;
 		z-index:15;
+		@media only screen and (max-width: 800px){
+			margin: -19em 0 0 30em;
+		}
 		a{
 			background: rgb(250,198,149); /* Old browsers */
 			background: -moz-linear-gradient(top,  rgba(250,198,149,1) 0%, rgba(245,171,102,1) 47%, rgba(239,141,49,1) 100%); /* FF3.6+ */
