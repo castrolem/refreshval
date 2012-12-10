@@ -319,6 +319,11 @@ header.container {
     width: 100%;
     margin: 1.2em auto; }
 
+.pic-link {
+  font-size: 1.5em;
+  padding-right: 20px;
+  line-height: 2.5em; }
+
 #main-footer {
   background: #352a25;
   height: 130px;
