@@ -10,6 +10,7 @@ html,body{
 	background-color: $light-base;
 	color: $base;
 	font-family:  "Fanwood Text", Times, serif;
+	transitions: all 350ms easy-in-out;
 }
 
 h2{
@@ -54,6 +55,31 @@ sup{
 	text-indent: -9999px;
 	&:hover{
 		opacity: 0.8;
+	}
+}
+
+.social{
+	position: relative;
+	top: 0.5em;
+	right: 6.5em;
+	float: right;
+	li{
+		display: inline;
+	}
+	.fb{
+		background: url(../images/fb.png) no-repeat;
+		height: 32px;
+		width: 32px;
+		float: left;
+		margin-right: 10px;
+		text-indent: -9999px;
+	}
+	.tw{
+		background: url(../images/tw.png) no-repeat;
+		height: 32px;
+		width: 32px;
+		float: left;
+		text-indent: -9999px;
 	}
 }
 
@@ -190,6 +216,14 @@ header.container{
 		width: 100%;
 		margin: 1.2em auto;
 	}
+}
+
+//social info
+
+.pic-link{
+	font-size: 1.5em;
+	padding-right: 20px;
+	line-height: 2.5em;
 }
 
 //footer
