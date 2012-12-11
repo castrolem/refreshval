@@ -56,6 +56,14 @@ sup{
 	&:hover{
 		opacity: 0.8;
 	}
+	@media only screen and (max-width: 768px){
+		width: 290px;
+		height: 107px;
+	}
+	@media only screen and (max-width: 480px){
+		width:100%;
+		margin: 1em auto 0;
+	}
 }
 
 .social{
@@ -63,6 +71,9 @@ sup{
 	top: 0.5em;
 	right: 6.5em;
 	float: right;
+	@media only screen and (max-width: 480px){
+		right: 1.5em;
+	}
 	li{
 		display: inline;
 	}
@@ -85,6 +96,9 @@ sup{
 
 header.container{
 	padding-left: 10em;
+	@media only screen and (max-width: 480px){
+		padding-left: 0;
+	}
 }
 
 //Images section
