@@ -96,6 +96,12 @@ sup{
 
 header.container{
 	padding-left: 10em;
+	@media only screen and (max-width:768px){
+		position: absolute;
+		margin: -6.5em 26em;
+		padding: 20px 0 0;
+		width: 100%;
+	}
 	@media only screen and (max-width: 480px){
 		padding-left: 0;
 	}
@@ -108,6 +114,15 @@ header.container{
 	height: 520px;
 	text-indent: -9999px;
 	z-index: 5;
+	@media only screen and (max-width: 768px){
+		background: #c64426 url('../images/refresh-nature-mini.png') no-repeat;
+		height: 700px;
+	}
+	@media only screen and (max-width: 480px){
+		background: #c64426 url('../images/refresh-nature-mini.png') no-repeat;
+		background-size: cover;
+		height: 342px;
+	}
 	//Refresh images
 	& .refresh{
 	width:100%;
@@ -119,6 +134,15 @@ header.container{
 			height: 500px;
 			text-indent: -9999px;
 			z-index: 10;
+			@media only screen and (max-width: 768px){
+				background: url('../images/refresh-stage-mini.png') no-repeat;
+				height: 649px;
+			}
+			@media only screen and (max-width: 480px){
+				background: url('../images/refresh-stage-mini.png') no-repeat;
+				background-size: cover;
+				height: 342px;
+			}
 		}
 		&.people{
 			background: url('../images/refresh-people.png') repeat-x;
@@ -126,6 +150,12 @@ header.container{
 			margin: 21em 0 0;
 			text-indent: -9999px;
 			z-index: 15;
+			@media only screen and (max-width: 768px){
+				margin: 32.5em 0 0;
+			}
+			@media only screen and (max-width: 480px){
+				display: none;
+			}
 		}
 	}
 }
@@ -140,6 +170,9 @@ header.container{
 	height: 400px;
 	margin: 0 auto;
 	position: relative;
+	@media only screen and (max-width: 480px){
+		height: 500px;
+	}
 	iframe{
 		display: block;
 		height: 100%;
@@ -154,14 +187,23 @@ header.container{
 		position: relative;
 		width: 30%;
 		z-index:15;
-		@media only screen and (max-width: 800px){
+		@media only screen and (max-width: 1280px){
 			margin: -19em 0 0 30em;
+		}
+		@media only screen and (max-width: 768px){
+			margin: -19em 0 0 20em;
+			width: 50%;
+		}
+		@media only screen and (max-width: 480px){
+			margin: -24em 0 0 7em;
+			width: 65%;
 		}
 		a{
 			color: $light-base;
 			display: block;
 			text-align: center;
 			text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+			margin: 0 auto;
 			&:hover{
 				text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 			}
@@ -179,6 +221,12 @@ header.container{
 	height: 290px;
 	background-size: cover;
 	text-indent: -9999px;
+	@media only screen and (max-width: 768px){
+		height: 457px;
+	}
+	@media only screen and (max-width: 480px){
+		height: 246px;
+	}
 }
 
 //agenda
@@ -213,7 +261,6 @@ header.container{
 
 //sponsors
 .sponsor li{
-	width: 100%;
 	height: 150px;
 	padding: 10px;
 	background: lighten($base, 80%);
@@ -222,6 +269,9 @@ header.container{
 	margin: 0 2% 2% 0;
 	float: left;
 	display: block;
+	@media only screen and (max-width:480px){
+		width: 48%;
+	}
 	&:hover{
 		background: lighten($base, 65%);
 		border: 2px solid lighten($base, 50%);
@@ -229,6 +279,9 @@ header.container{
 	img{
 		width: 100%;
 		margin: 1.2em auto;
+		@media only screen and (max-width: 480px){
+			margin: 2.5em auto;
+		}
 	}
 }
 
@@ -238,6 +291,9 @@ header.container{
 	font-size: 1.5em;
 	padding-right: 20px;
 	line-height: 2.5em;
+	@media only screen and (max-width:480px){
+		font-size: 1.2em;
+	}
 }
 
 //footer
@@ -252,10 +308,16 @@ header.container{
 	h3{
 		font-size: 1.5em;
 		color: $light-base;
+		@media only screen and (max-width:480px){
+			font-size: 1.3em;
+		}
 	}
 	p{
 		font-size: 1.1em;
 		color: $light-base;
+		@media only screen and (max-width:480px){
+			font-size: 0.9em;
+		}
 	}
 }
 
@@ -269,6 +331,12 @@ header.container{
 	text-indent: -9999px;
 	&:hover{
 		opacity:0.8;
+	}
+	@media only screen and (max-width:480px){
+		background-size: cover;
+		width: 48px;
+		height: 48px;
+		margin: -2.5em 0 0;
 	}
 }
 
