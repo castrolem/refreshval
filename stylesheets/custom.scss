@@ -15,6 +15,12 @@ html,body{
 
 h2{
 	font: normal 3.2em/1.1em "Titan One", Tahoma, Arial, serif;
+	@media only screen and (max-width: 960px){
+		font-size: 2.8em;
+	}
+	@media only screen and (max-width: 480px){
+		font-size: 2.6em;
+	}
 }
 
 p, h3{
@@ -61,8 +67,9 @@ sup{
 		height: 107px;
 	}
 	@media only screen and (max-width: 480px){
-		width:100%;
-		margin: 1em auto 0;
+		width:220px;
+		height:82px;
+		margin: 1em auto 1em;
 	}
 }
 
@@ -96,14 +103,25 @@ sup{
 
 header.container{
 	padding-left: 10em;
+	@media only screen and (min-width: 1690px) and (max-width: 1920px){
+		padding-left:30em;
+	}
+	@media only screen and (min-width: 1500px) and (max-width: 1680px){
+		padding-left:20em;
+	}
+	@media only screen and (max-width: 960px){
+		padding-left:13.5em;
+	}
 	@media only screen and (max-width:768px){
 		position: absolute;
 		margin: -6.5em 26em;
 		padding: 20px 0 0;
-		width: 100%;
+		width: 40%;
 	}
 	@media only screen and (max-width: 480px){
+		margin: -2.5em 0.4em;
 		padding-left: 0;
+		width: 90%;
 	}
 }
 
@@ -114,6 +132,15 @@ header.container{
 	height: 520px;
 	text-indent: -9999px;
 	z-index: 5;
+	@media only screen and (min-width: 1690px) and (max-width: 1920px){
+		height: 685px;
+	}
+	@media only screen and (min-width: 1500px) and (max-width: 1680px){
+		height: 585px;
+	}
+	@media only screen and (max-width: 960px){
+		height: 340px;
+	}
 	@media only screen and (max-width: 768px){
 		background: #c64426 url('../images/refresh-nature-mini.png') no-repeat;
 		height: 700px;
@@ -134,6 +161,15 @@ header.container{
 			height: 500px;
 			text-indent: -9999px;
 			z-index: 10;
+			@media only screen and (min-width: 1690px) and (max-width: 1920px){
+				height: 650px;
+			}
+			@media only screen and (min-width: 1500px) and (max-width: 1680px){
+				height: 550px;
+			}
+			@media only screen and (max-width: 960px){
+				height: 340px;
+			}
 			@media only screen and (max-width: 768px){
 				background: url('../images/refresh-stage-mini.png') no-repeat;
 				height: 649px;
@@ -150,6 +186,18 @@ header.container{
 			margin: 21em 0 0;
 			text-indent: -9999px;
 			z-index: 15;
+			@media only screen and (min-width: 1690px) and (max-width: 1920px){
+				margin: 31em 0 0;
+			}
+			@media only screen and (min-width: 1500px) and (max-width: 1680px){
+				margin: 26em 0 0;
+			}
+			@media only screen and (min-width: 970px) and (max-width: 1280px){
+				margin: 18em 0 0;
+			}
+			@media only screen and (max-width: 960px){
+				margin: 11.5em 0 0;
+			}
 			@media only screen and (max-width: 768px){
 				margin: 32.5em 0 0;
 			}
@@ -187,16 +235,26 @@ header.container{
 		position: relative;
 		width: 30%;
 		z-index:15;
+		@media only screen and (min-width: 1690px) and (max-width: 1920px){
+			margin: -19em 0 0 46em;
+		}
+		@media only screen and (min-width: 1500px) and (max-width: 1680px){
+			margin: -19em 0 0 40em;
+		}
 		@media only screen and (max-width: 1280px){
 			margin: -19em 0 0 30em;
+		}
+		@media only screen and (max-width: 960px){
+			margin: -19em 0 0 16em;
+			width: 50%;
 		}
 		@media only screen and (max-width: 768px){
 			margin: -19em 0 0 20em;
 			width: 50%;
 		}
 		@media only screen and (max-width: 480px){
-			margin: -24em 0 0 7em;
-			width: 65%;
+			margin: -27.1em 0 0 3em;
+			width: 80%;
 		}
 		a{
 			color: $light-base;
@@ -221,11 +279,24 @@ header.container{
 	height: 290px;
 	background-size: cover;
 	text-indent: -9999px;
+	@media only screen and (min-width: 1690px) and (max-width: 1920px){
+		height: 400px;
+	}
+	@media only screen and (min-width: 1500px) and (max-width: 1680px){
+		height: 347px;
+	}
+	@media only screen and (min-width: 970px) and (max-width: 1280px){
+		height: 250px;
+	}
+	@media only screen and (max-width: 960px){
+		height: 177px;
+	}
 	@media only screen and (max-width: 768px){
 		height: 457px;
 	}
 	@media only screen and (max-width: 480px){
-		height: 246px;
+		width: 300px;
+		height: 210px;
 	}
 }
 
@@ -234,6 +305,9 @@ header.container{
 #agenda{
 	//to define the margin right with the dotted line
 	padding-right: 50px;
+	@media screen and (max-width: 480px){
+		padding-right: 0px;		
+	}
 	//others
 	li{
 		border-bottom: 1px dashed $base;
@@ -253,7 +327,7 @@ header.container{
 		top: 2px;
 		text-transform: uppercase;
 		font: bold 0.8em/1.9em "Helvetica Neue", Helvetica, Arial, serif;
-		@media screen and (min-width: 930px){
+		@media screen and (max-width: 930px){
 			
 		}
 	}
@@ -279,6 +353,12 @@ header.container{
 	img{
 		width: 100%;
 		margin: 1.2em auto;
+		@media only screen and (min-width: 1690px) and (max-width: 1920px){
+			margin: 0.5em auto;
+		}
+		@media only screen and (max-width: 768px){
+			margin: 2.6em auto;
+		}
 		@media only screen and (max-width: 480px){
 			margin: 2.5em auto;
 		}
