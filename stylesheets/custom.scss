@@ -15,6 +15,9 @@ html,body{
 
 h2{
 	font: normal 3.2em/1.1em "Titan One", Tahoma, Arial, serif;
+	@media only screen and (max-width: 1024px){
+		font-size: 2.4em;
+	}
 	@media only screen and (max-width: 960px){
 		font-size: 2.8em;
 	}
