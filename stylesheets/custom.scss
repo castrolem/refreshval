@@ -149,7 +149,8 @@ header.container{
 	@media only screen and (max-width: 480px){
 		background: #c64426 url('../images/refresh-nature-mini.png') no-repeat;
 		background-size: cover;
-		height: 342px;
+		height: 274px;
+		width: 320px;
 	}
 	//Refresh images
 	& .refresh{
@@ -175,11 +176,14 @@ header.container{
 			@media only screen and (max-width: 768px){
 				background: url('../images/refresh-stage-mini.png') no-repeat;
 				height: 649px;
+				margin: 0;
 			}
 			@media only screen and (max-width: 480px){
 				background: url('../images/refresh-stage-mini.png') no-repeat;
 				background-size: cover;
-				height: 342px;
+				height: 274px;
+				width: 320px;
+				margin: 0;
 			}
 		}
 		&.people{
@@ -204,7 +208,7 @@ header.container{
 				margin: 11.5em 0 0;
 			}
 			@media only screen and (max-width: 768px){
-				margin: 14em 0 0;
+				margin: 32.5em 0 0;
 			}
 			@media only screen and (max-width: 480px){
 				display: none;

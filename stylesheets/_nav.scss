@@ -1,9 +1,9 @@
 .main-nav{
 	float: right;
 	font-size: 1.4em;
-	@media screen only and (max-width: 480px){
+	@media only screen and (max-width: 480px){
 		float: none;
-		margin: 0 2em;
+		margin: 0 1.7em 0.1em;
 	}
 	//others
 	ul li{
