@@ -52,37 +52,6 @@
 	}
 }
 
-.medium{
-	margin-top: 1.4em;
-	max-width: 360px;
-	box-shadow: 0em 0.333em 0em #005919; /* 5.33px/16px */
-	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=4, Color='#005919', Positive='true');
-	@media only screen and (max-width: 1400px){
-		max-width: 308px;
-	}
-	@media only screen and (max-width: 1200px){
-		max-width: 266px;
-	}
-	@media only screen and (max-width: 1024px){
-		max-width: 220px;
-		font-size: 2em;
-	}
-	@media only screen and (max-width: 960px){
-		max-width: 170px;
-		font-size: 1.6em;
-		margin-top: 3.2em;
-	}
-	@media only screen and (max-width: 768px){
-		max-width: 135px;
-		font-size: 1.2em;
-		margin-top: 3em;
-	}
-	@media only screen and (max-width: 480px){
-		max-width: 125px;
-		margin: 0 0.2em;
-	}
-}
-
 .small{
 	max-width: 220px;
 	max-height: 50px;

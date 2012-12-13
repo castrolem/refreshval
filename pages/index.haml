@@ -23,23 +23,31 @@
 								<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	%body
 		/ Twitter and Facebook elements
-		.top-bar
-			%ul.social
-				%li
-					%a.fb{:href => "#"} Facebook
-				%li
-					%a.tw{:href => "#"} Twitter
-		/ First row
-		.grid
-			/ Logo and big buttons
-			.cols-1-3
-				%section.container
-					%a{:href => "http://refreshvalencia.org"}
-						#refresh-logo Refresh Valencia Logo
-			.cols-2-3
-				%header.container
-					%a.medium.button.green Blog
-					%a.medium.button.green Registro
+		.wrapper
+			.top-bar
+				%ul.social
+					%li
+						%a.fb{:href => "#"} Facebook
+					%li
+						%a.tw{:href => "#"} Twitter
+			/ First row
+			.grid
+				/ Logo and big buttons
+				.cols-1-1
+					%section.container
+						%a{:href => "http://refreshvalencia.org"}
+							#refresh-logo Refresh Valencia Logo
+			.grid
+				/ Navigation bar
+				.cols-1-1
+					%nav.main-nav
+						%ul
+							%li
+								%a Blog
+							%li
+								%a Registro
+							%li
+								%a Contacto
 		/ Second row - Vanessa Illustration
 		%section#illustration
 			#clouds
@@ -52,122 +60,123 @@
 			.refresh.stage Stage from Refresh
 			.refresh.people People from Refresh
 		/ Third row
-		#info.grid
-			/ First column
-			.cols-1-3
-				%section.container
-					/ History of the event
-					%article
-						%h2 Historia
-						%h3 ¿De donde salió?
+		.wrapper
+			#info.grid
+				/ First column
+				.cols-1-3
+					%section.container
+						/ History of the event
+						%article
+							%h2 Historia
+							%h3 ¿De donde salió?
+							%p
+								Fuimos establecidos por
+								%a{:href => "http://cxms.me/bio", :target => "_blank"} @webjac
+								en Diciembre del 2008. En nuestra primera reunión, debatimos nuestro conocimiento de los temas mas importantes para fecha, telefonía móvil, conversamos de microblogging y Windows 7, tópicos que se transformaron en la vida cotidiana de la mayoría de las personas de nuestro país. Ya que esta fue informal y entre varios amigos tuvimos unas pizzas acompañadas de unas “birras” y desde entonces, la comunidad ha crecido y se ha reunido ininterrumpidamente.
+				/ Second column
+				.cols-2-3
+					%section#maps.container
+						%h2 Lugar y Fecha
+						%h3
+							Sábado, Diciembre 1
+							%sup ro
+							de 2012
+						%iframe{:frameborder => "0", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "https://maps.google.com/maps/ms?msa=0&msid=213198785991084970089.0004d05ac01fdb1e23020&ie=UTF8&t=m&z=17&output=embed"}
 						%p
-							Fuimos establecidos por
-							%a{:href => "http://cxms.me/bio", :target => "_blank"} @webjac
-							en Diciembre del 2008. En nuestra primera reunión, debatimos nuestro conocimiento de los temas mas importantes para fecha, telefonía móvil, conversamos de microblogging y Windows 7, tópicos que se transformaron en la vida cotidiana de la mayoría de las personas de nuestro país. Ya que esta fue informal y entre varios amigos tuvimos unas pizzas acompañadas de unas “birras” y desde entonces, la comunidad ha crecido y se ha reunido ininterrumpidamente.
-			/ Second column
-			.cols-2-3
-				%section#maps.container
-					%h2 Lugar y Fecha
-					%h3
-						Sábado, Diciembre 1
-						%sup ro
-						de 2012
-					%iframe{:frameborder => "0", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "https://maps.google.com/maps/ms?msa=0&msid=213198785991084970089.0004d05ac01fdb1e23020&ie=UTF8&t=m&z=17&output=embed"}
-					%p
-						Auditorio del Carabobeño
-						Av. 102 Universidad
-						Calle 179 Paseo Valencia.
-						%a.small.button.orange{:href => "http://goo.gl/maps/S64Ix", :target => "_blank"} Ver Mapa
-		/ Fourth row
-		.grid.content
-			.cols-1-3
-				%section.container
-					%article
-						/ What is it?
-						%h2 Donaciones
-						%h3 ¿Deseas ayudar?
-						%p Somos una comunidad abierta y libre, por lo tanto además de apoyar nuevas iniciativas en el mundo tecnológico, también ayudamos de otras maneras a la sociedad, para más información, pregunta como puedes ayudar a uno de nuestros organizadores en la próxima reunión
-					/ Rules of the game
-					%article.spacer
-						%h2 Reglas
-						%h3 No muchas
-						.rules Reglas de Refresh
-			.cols-2-3
-				%section#agenda.container
-					%h2 Agenda
-					%h3 ¿Cuáles son los temas?
-					%ol
-						%li
-							%h6 1:30 p.m.
-							\- Bienvenida
-						%li
-							%h6 2:00 p.m.
-							\- Primera ponencia
-						%li
-							%h6 2:30 p.m.
-							\- Segunda Ponencia
-						%li
-							%h6 3:00 p.m.
-							\- Tercera Ponencia
-						%li
-							%h6 3:30 p.m.
-							\- Receso
-						%li
-							%h6 4:00 p.m.
-							\- Cuarta ponencia
-						%li
-							%h6 4:30 p.m.
-							\- Quinta ponencia
-						%li
-							%h6 5:00 p.m.
-							\- Foro abierto
-						%li
-							%h6 5:30 p.m.
-							\- Clausura
-		/ Fifth row - Sponsors
-		/ Compound by two rows - First one down below
-		.grid
-			.cols-1-1
-				.container
-					%ul.sponsor
-						%li
-							%a{:href => "#"}
-								%img{:alt => "El Carabobeño", :src => "images/carabobeno.png"}/
-						%li
-							%a{:href => "#"}
-								%img{:alt => "Hashlabs C.A.", :src => "images/hash.png"}/
-						%li
-							%a{:href => "#"}
-								%img{:alt => "Hipervínculo C.A.", :src => "images/hiper.png"}/
-						%li
-							%a{:href => "#"}
-								%img{:alt => "Hackbradabra", :src => "images/hack.png"}/
-						%li
-							%a{:href => "#"}
-						%li
-							%a{:href => "#"}
-						%li
-							%a{:href => "#"}
-						%li
-							%a{:href => "#"}
-		/ End second row
-		/ Footer
-		.grid
-			.cols-2-4
-				.container
-					%h2 Está informado
-					%p
-						Para más noticias, revisa nuestro blog en el siguiente
-						%a{:href => "#"} enlace
-			.cols-2-4
-				.container
-					%h2 Promueve la iniciativa
-					%p Ayúdanos a promover nuestro evento! Esparce por las diferentes redes sociales nuestro LOGO, danos un mention en Twitter:
-					%a.pic-link{:href => "../downloads/logo.png", :target => "_blank"} .PNG Logo (77Kb)
-					%a.pic-link{:href => "../downloads/logo.png", :target => "_blank"} .EPS Logo (1.338Kb)
-					%a{:href => "https://twitter.com/refreshval", :target => "_blank"}
-						.large.button.orange 
-							%img{:alt => "Bird", :src => "images/bird.png"} Siguenos en Twitter
+							Auditorio del Carabobeño
+							Av. 102 Universidad
+							Calle 179 Paseo Valencia.
+							%a.small.button.orange{:href => "http://goo.gl/maps/S64Ix", :target => "_blank"} Ver Mapa
+			/ Fourth row
+			.grid.content
+				.cols-1-3
+					%section.container
+						%article
+							/ What is it?
+							%h2 Donaciones
+							%h3 ¿Deseas ayudar?
+							%p Somos una comunidad abierta y libre, por lo tanto además de apoyar nuevas iniciativas en el mundo tecnológico, también ayudamos de otras maneras a la sociedad, para más información, pregunta como puedes ayudar a uno de nuestros organizadores en la próxima reunión
+						/ Rules of the game
+						%article.spacer
+							%h2 Reglas
+							%h3 No muchas
+							.rules Reglas de Refresh
+				.cols-2-3
+					%section#agenda.container
+						%h2 Agenda
+						%h3 ¿Cuáles son los temas?
+						%ol
+							%li
+								%h6 1:30 p.m.
+								\- Bienvenida
+							%li
+								%h6 2:00 p.m.
+								\- Primera ponencia
+							%li
+								%h6 2:30 p.m.
+								\- Segunda Ponencia
+							%li
+								%h6 3:00 p.m.
+								\- Tercera Ponencia
+							%li
+								%h6 3:30 p.m.
+								\- Receso
+							%li
+								%h6 4:00 p.m.
+								\- Cuarta ponencia
+							%li
+								%h6 4:30 p.m.
+								\- Quinta ponencia
+							%li
+								%h6 5:00 p.m.
+								\- Foro abierto
+							%li
+								%h6 5:30 p.m.
+								\- Clausura
+			/ Fifth row - Sponsors
+			/ Compound by two rows - First one down below
+			.grid
+				.cols-1-1
+					.container
+						%ul.sponsor
+							%li
+								%a{:href => "#"}
+									%img{:alt => "El Carabobeño", :src => "images/carabobeno.png"}/
+							%li
+								%a{:href => "#"}
+									%img{:alt => "Hashlabs C.A.", :src => "images/hash.png"}/
+							%li
+								%a{:href => "#"}
+									%img{:alt => "Hipervínculo C.A.", :src => "images/hiper.png"}/
+							%li
+								%a{:href => "#"}
+									%img{:alt => "Hackbradabra", :src => "images/hack.png"}/
+							%li
+								%a{:href => "#"}
+							%li
+								%a{:href => "#"}
+							%li
+								%a{:href => "#"}
+							%li
+								%a{:href => "#"}
+			/ End second row
+			/ Footer
+			.grid
+				.cols-2-4
+					.container
+						%h2 Está informado
+						%p
+							Para más noticias, revisa nuestro blog en el siguiente
+							%a{:href => "#"} enlace
+				.cols-2-4
+					.container
+						%h2 Promueve la iniciativa
+						%p Ayúdanos a promover nuestro evento! Esparce por las diferentes redes sociales nuestro LOGO, danos un mention en Twitter:
+						%a.pic-link{:href => "../downloads/logo.png", :target => "_blank"} .PNG Logo (77Kb)
+						%a.pic-link{:href => "../downloads/logo.png", :target => "_blank"} .EPS Logo (1.338Kb)
+						%a{:href => "https://twitter.com/refreshval", :target => "_blank"}
+							.large.button.orange 
+								%img{:alt => "Bird", :src => "images/bird.png"} Siguenos en Twitter
 		%footer#main-footer.grid
 			.cols-1-1
 				.container
