@@ -1,7 +1,10 @@
 .main-nav{
 	float: right;
 	font-size: 1.4em;
-
+	@media screen only and (max-width: 480px){
+		float: none;
+		margin: 0 2em;
+	}
 	//others
 	ul li{
 		display: inline;
