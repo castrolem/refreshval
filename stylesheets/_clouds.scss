@@ -1,6 +1,6 @@
 #clouds {
 	position: relative;
-	top: 120px;
+	top: 10px;
 	z-index: 7;
 	overflow: hidden;
 	display: inline;
@@ -19,50 +19,10 @@
 /*Time to finalise the cloud shape*/
 
 .cloud {
-	width: 200px;
-	height: 60px;
-	background: #fff;
-	border-radius: 200px;
-	-moz-border-radius: 200px;
-	-webkit-border-radius: 200px;
+	width: 194px;
+	height: 126px;
+	background: url('../images/cloud.png') no-repeat;
 	position: relative;
-	&:before {
-		content: '';
-		position: absolute;
-		background: #fff;
-		width: 100px;
-		height: 80px;
-		position: absolute;
-		top: -15px;
-		left: 10px;
-		border-radius: 100px;
-		-moz-border-radius: 100px;
-		-webkit-border-radius: 100px;
-		-webkit-transform: rotate(30deg);
-		transform: rotate(30deg);
-		-moz-transform: rotate(30deg);
-	}
-	&:after {
-		content: '';
-		position: absolute;
-		background: #fff;
-		width: 100px;
-		height: 80px;
-		position: absolute;
-		top: -15px;
-		left: 10px;
-		border-radius: 100px;
-		-moz-border-radius: 100px;
-		-webkit-border-radius: 100px;
-		-webkit-transform: rotate(30deg);
-		transform: rotate(30deg);
-		-moz-transform: rotate(30deg);
-		width: 120px;
-		height: 120px;
-		top: -55px;
-		left: auto;
-		right: 15px;
-	}
 }
 
 /*Time to animate*/
@@ -121,7 +81,7 @@
 
 .x5 {
 	left: -150px;
-	top: -150px;
+	top: -350px;
 	-webkit-transform: scale(0.8);
 	-moz-transform: scale(0.8);
 	transform: scale(0.8);

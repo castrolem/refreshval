@@ -169,7 +169,7 @@ header.container{
 			height: 500px;
 			text-indent: -9999px;
 			z-index: 10;
-			margin-top: -18.75em;
+			margin-top: -39.4em;
 			@media only screen and (min-width: 1690px) and (max-width: 1920px){
 				height: 650px;
 			}
@@ -199,17 +199,20 @@ header.container{
 		&.people{
 			background: url('../images/refresh-people.png') repeat-x;
 			height: 154px;
-			margin: 2.5em 0 0;
+			margin: -18em 0 0;
 			text-indent: -9999px;
 			z-index: 15;
 			@media only screen and (min-width: 1690px) and (max-width: 1920px){
-				margin: 12em 0 0;
+				margin: -8.8em 0 0;
 			}
 			@media only screen and (min-width: 1500px) and (max-width: 1680px){
-				margin: 7.5em 0 0;
+				margin: -13.5em 0 0;
+			}
+			@media only screen and (min-width: 1300px) and (max-width: 1400px){
+				margin: -19.9em 0 0;
 			}
 			@media only screen and (min-width: 1080px) and (max-width: 1280px){
-				margin: -1em 0 0;
+				margin: -21.5em 0 0;
 			}
 			@media only screen and (max-width: 1024px){
 				margin: 12.7em 0 0;
@@ -340,8 +343,9 @@ header.container{
 		top: 2px;
 		text-transform: uppercase;
 		font: bold 0.8em/1.9em "Helvetica Neue", Helvetica, Arial, serif;
-		@media screen and (max-width: 930px){
-			
+		@media all and (-webkit-min-device-pixel-ratio: 1.5){
+			background: url(../images/clock@2x.png) 0 center no-repeat;
+			background-size: 27px 27px;
 		}
 	}
 }
